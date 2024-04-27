@@ -12,5 +12,5 @@
       msg: "Hi i am learing {{Course}} Triner {{Triner}}, Duration {{Duration}}"
       
   - name: print variables
-    ansible.builting.debug:
+    ansible.builtin.debug:
       msg: "Hi i am learing {{Course}} Triner {{Triner}}, Duration {{Duration}}"
