@@ -4,7 +4,7 @@
   tasks:
   - name: stop the nginx 
     ansible.builtin.service:
-     name: nginx
+      name: nginx
       state: stopped
   - name: deinstall the nginx 
     ansible.builtin.dnf: 
