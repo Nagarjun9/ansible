@@ -1,12 +1,12 @@
 - name: varible task
   hosts: web 
-  var: 
+  vars: 
     Course: "Teraform"
     Triner: "Siva"
     Duration: "120hr"
   tasks: 
   - name: pring override variables
-    var:
+    vars:
       Course: "Devops"
     ansible.builtin.debug:
       msg: "Hi i am learing {{Course}} Triner {{Triner}}, Duration {{Duration}}"
