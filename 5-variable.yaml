@@ -1,0 +1,10 @@
+- name: varibles
+  hosts: web 
+  vars:
+    Course: "ansible"
+    Triner: "Siva" 
+    Duration: "120hr"
+  tasks: 
+  - name: print ther information 
+    ansible.builtin.debug:
+      msg: "I am learing {{Course}} Triner {{Triner}} Durations {{Duration}}"
