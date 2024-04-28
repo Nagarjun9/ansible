@@ -1,0 +1,14 @@
+- name: varible from prompt
+  hosts: remote
+  vars_prompt:
+  - name: USERNMAE
+    prompt: please enter username
+    private: false
+  - name: PASSWORD
+    password: Please enter the password
+    private: true
+  
+  - name: prompt variables decleration 
+    ansible.builtin.debug:
+      msg: "USERNAME is: {{USERNMAE}}, PASSWORD is: {{PASSWORD}}"
+  
