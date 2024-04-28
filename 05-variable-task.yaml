@@ -1,9 +1,9 @@
 - name: variable task
   hosts: remote 
   vars:
-  COURSE: "DEVOPS"
-  TRINER: "SIVA"
-  DURATION: "3 Months"
+    COURSE: "DEVOPS"
+    TRINER: "SIVA"
+    DURATION: "3 Months"
   tasks:
   - name: Varible in task level
     vars:
