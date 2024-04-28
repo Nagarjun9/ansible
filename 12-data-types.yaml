@@ -14,5 +14,5 @@
     Realtime: true
   tasks:
   - name: print data types
-    ansible.builtin.debug:
+    nsible.builtin.debug:
       msg: " I am learing {{Course}}, in tools {{Tools}}, experiance in {{Experiance}}, it's a Realtime {{Realtime}}"
