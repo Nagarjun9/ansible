@@ -10,5 +10,5 @@
   
   - name: prompt variables decleration 
     ansible.builtin.debug:
-      msg: "USERNAME is: {{USERNMAE}}, PASSWORD is: {{PASSWORD}}"
+      msg: "USERNAME is: {{USERNAME}}, PASSWORD is: {{PASSWORD}}"
   
