@@ -10,4 +10,4 @@
   tasks:
   - name: prompt for inpits
     ansible.builtin.debug:
-      msg: HI i am using {{USERNAME}} and {{PASSWORD}}
+      msg: "HI, USERNMAE {{USERNAME}} and PASSWORD is: {{PASSWORD}}"
