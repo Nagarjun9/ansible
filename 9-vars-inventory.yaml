@@ -5,3 +5,11 @@
       vars:
       ansible.builtin.debug:
         msg: " Hi i am learing Course: {{COURSE}}, Triner is: {{TRINER}}, Duration is: {{DURATION}}, timmings {{TIMINGS}}"
+
+- name: inve for varibles
+  hosts: localhost
+  tasks:
+  - name: print variable
+    vars:
+    ansible.builtin.debug:
+      msg: "Hi i am learning {{COURSE}}, triner from {{TRINER}}, durations {{DURATION}}, taiming {{TIMINGS}}"
