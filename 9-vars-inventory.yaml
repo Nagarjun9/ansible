@@ -1,7 +1,6 @@
 - name: variable from inventory 
   hosts: localhost
-  vars_files:
-  - vars.yaml
+  tasks:
   - name: print override information
     vars:
       TIMINGS: "07:05am IST"
