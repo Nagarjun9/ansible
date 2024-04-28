@@ -3,7 +3,7 @@
   vars:
     COURSE: "Devops"
     TRINER: "Siva"
-    DURATION: ""3 Months
+    DURATION: "3 Months"
   tasks:
   - name: print variable
     ansible.builtin.debug:
