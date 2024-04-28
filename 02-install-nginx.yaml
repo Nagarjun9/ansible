@@ -13,3 +13,14 @@
       state: started
       enabled: yes
 
+  - name: stop the service
+    ansible.builtin.service:
+      name: nginx
+      state: stopped
+
+  - name: remove the nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: removed 
+
+

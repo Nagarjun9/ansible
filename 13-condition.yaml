@@ -1,5 +1,5 @@
 - name: condition
-  hosts: web 
+  hosts: remote 
   become: yes
   tasks:
   - name: check user 
