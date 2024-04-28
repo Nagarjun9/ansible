@@ -3,7 +3,7 @@
   vars_files:
   - vars.yaml
   - name: print override information
-  vars:
-    TIMINGS: "07:05am IST"
-  ansible.builtin.debug:
-    msg: " Hi i am learing Course: {{COURESE}} Triner is: {{TRINER}} Duration is: {{DURATION}} timmings {{TIMINGS}}"
+    vars:
+      TIMINGS: "07:05am IST"
+    ansible.builtin.debug:
+      msg: " Hi i am learing Course: {{COURESE}} Triner is: {{TRINER}} Duration is: {{DURATION}} timmings {{TIMINGS}}"
