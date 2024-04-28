@@ -2,10 +2,10 @@
   hosts: remote
   vars_files:
   - vars.yaml
-  vars_prompt:
-  - name: WISHES
-    prompt: Morning wishes
-    private: false
+  #vars_prompt:
+  #- name: WISHES
+   # prompt: Morning wishes
+    #private: false
   vars:
     WISHES: "Morning from PLAY variable"
   tasks:
