@@ -6,7 +6,7 @@
       ansible.builtin.debug:
         msg: " Hi i am learing Course: {{COURSE}}, Triner is: {{TRINER}}, Duration is: {{DURATION}}, timmings {{TIMINGS}}"
 
-- name: inve for varibles
+- name: inventory to varibles
   hosts: localhost
   tasks:
   - name: print variable

@@ -1,0 +1,6 @@
+- name: aurgemts
+  hosts: localhost
+  tasks:
+  - name: passed argument outside 
+    ansible.builtin.debug:
+      msg: "Hellow {{PERSONE}}, GOOD {{WISHESH}}"
