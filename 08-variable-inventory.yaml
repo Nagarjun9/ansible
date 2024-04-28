@@ -2,7 +2,8 @@
   hosts: remote
   tasks:
   - name: variable from inve
-    vars: 
-      timings: "07:30 am IST"
+    #vars: 
+     # timings: "07:30 am IST"
     ansible.builtin.debug:
-      msg: " I am learning {{COURSE}}, Triner is: {{TRINER}}, Duration takes: {{DURATION}}, timming is: {{timings}} "
+    #  msg: " I am learning {{COURSE}}, Triner is: {{TRINER}}, Duration takes: {{DURATION}}, timming is: {{timings}} "
+       msg: " I am learning {{COURSE}}, Triner is: {{TRINER}}, Duration takes: {{DURATION}}"
