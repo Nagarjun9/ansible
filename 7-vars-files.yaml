@@ -1,5 +1,5 @@
 - name: varible from file 
-  hosts: remote 
+  hosts: web 
   vars_files:
   - vars.yaml
   - name: varible from file
