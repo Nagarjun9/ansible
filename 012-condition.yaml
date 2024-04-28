@@ -11,3 +11,7 @@
   - name: print user infomation
     ansible.builtin.debug:
       msg: "user info {{USER}}"
+
+  - name: create user
+    ansible.builtin.debug: useradd Naga
+    when: USER.rc != 0
