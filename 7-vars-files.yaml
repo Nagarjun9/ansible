@@ -2,6 +2,7 @@
   hosts: web 
   vars_files:
   - vars.yaml
+  tasks:
   - name: varible from file
     ansible.built.debug:
       msg: "Hi i am learing {{Course}}, Triner {{Triner}}, Duration {{Duration}} "
