@@ -1,18 +1,18 @@
-- name: data types
-  hosts: localhost
+- name: data type
+  hostname: localhost
   vars:
-    Courses: Devops with AWS
+    Course: Devops with AWS
     Tools:
-    - Linix
-    - Ansible
-    - Devops
+    - Linux
+    - Sheel script
+    - Ansibul
+    - Teraform
     Experiance:
+      ASW: 3
       Devops: 2
-      AWS: 1
       Docker: 1
-    Realproject: true 
+    Realtime: true
   tasks:
-  - name: print variables
+  - name: print data types
     ansible.builtin.debug:
-      msg: "I am learning {{Courses}}, in Tools {{Tools}}, Experiance {{Experiance}}, realtime {{Realproject}}"
-    
+      msg: " I am learing {{Course}}, in tools {{Tools}}, experiance in {{Experiance}}, it's a Realtime {{Realtime}}"
