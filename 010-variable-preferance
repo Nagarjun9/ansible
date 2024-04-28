@@ -6,8 +6,8 @@
   #- name: WISHES
    # prompt: Morning wishes
     #private: false
-  vars:
-    WISHES: "Morning from PLAY variable"
+  #vars:
+   # WISHES: "Morning from PLAY variable"
   tasks:
   - name: task lever variable
     #vars:
