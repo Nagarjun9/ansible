@@ -1,7 +1,7 @@
 - name: variable prefered 
   hosts: localhost
-  vars: 
-    WISHES: "Morning to PLAY variable"
+  #vars: 
+   # WISHES: "Morning to PLAY variable"
   vars_files:
   - vars.yaml
   vars_prompt:
