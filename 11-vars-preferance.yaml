@@ -8,9 +8,9 @@
   - name: prompt
     prompt: please enter WISHES
     private: false 
-  tasks:
-  - name: check preferance
+  #tasks:
+  #- name: check preferance
    # vars: 
      # WISHES: "Morning form task variable"
-    ansible.builtin.debug:
-      msg: "HI Good {{WISHES}}"
+   # ansible.builtin.debug:
+    #  msg: "HI Good {{WISHES}}"
