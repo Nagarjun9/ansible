@@ -4,3 +4,10 @@
   - name: passed argument outside 
     ansible.builtin.debug:
       msg: "Hellow {{PERSON}}, GOOD {{WISH}}"
+
+- name: pass the argu
+  hosts: localhost
+  tasks:
+  - name: passing the argu outside
+    ansible.builtin.debug:
+      msg: "I am doing {{WORK}}, after that {{FRESH}}"
