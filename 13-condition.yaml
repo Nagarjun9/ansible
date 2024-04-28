@@ -15,9 +15,18 @@
     ansible.builtin.command: useradd Nagarjuna
     when: USER.rc != 0
 
+   - name: check user 
+    ansible.builtin.command: id Nagarjuna
+    register: USER
+    ignore_errors: true
+  
+  - name: print user information 
+    ansible.builtin.debug:
+      msg: "USER Info: {{USER}}"
+
   - name: user remove
     ansible.builtin.command: userdel Nagarjuna
-    when: USER.rc -eq 0
+    when: USER.rc = 0
     
   - name: say hellow
     ansible.builtin.debug:
