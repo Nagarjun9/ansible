@@ -10,7 +10,7 @@
     WISHES: "Morning from PLAY variable"
   tasks:
   - name: task lever variable
-    vars:
-      WISHES: "Morning form task variable"
+    #vars:
+     # WISHES: "Morning form task variable"
     ansible.builtin.debug:
       msg: "hi {{WISHES}}"
