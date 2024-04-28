@@ -16,7 +16,7 @@
     when: USER.rc != 0
   
   tasks:
-   - name: check user 
+   - name: find user 
     ansible.builtin.command: id Nagarjuna
     register: USERS
     ignore_errors: true
