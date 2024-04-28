@@ -3,14 +3,14 @@
   become: yes
   task:
   - name: check user 
-    ansible.builtin.commend: id Nagarjuna
+    ansible.builtin.command: id Nagarjuna
     register: USER
     ignore_errors: true
   
   - name: print user information 
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg: "USER Info: {{USER}}"
     
   - name: say hellow
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg: "Hellow"
