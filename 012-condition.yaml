@@ -4,7 +4,7 @@
   tasks:
   - name: user verification
     ansible.builtin.command: id Naga
-    registory: USER
+    register: USER
     ignore_error: true
 
 
