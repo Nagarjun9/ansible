@@ -1,0 +1,8 @@
+- name: file level variable
+  hosts: remote 
+  vars_files:
+  - vars.yaml
+  tasks:
+  - name: call file level variables
+    ansible.builtin.debug:
+      msg: "i am learning {{Course}}, trainer is: {{Triner}}, Duration takes: {{Duration}}"
