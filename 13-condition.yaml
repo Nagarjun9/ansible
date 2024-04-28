@@ -17,7 +17,7 @@
 
   - name: user remove
     ansible.builtin.command: userdel Nagarjuna
-    when: USER.rc = 0
+    when: USER.rc -eq 0
     
   - name: say hellow
     ansible.builtin.debug:
