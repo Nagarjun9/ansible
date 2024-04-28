@@ -1,7 +1,7 @@
 - name: condition
-  hosts: localhost 
+  hosts: web 
   become: yes
-  task:
+  tasks:
   - name: check user 
     ansible.builtin.command: id Nagarjuna
     register: USER
