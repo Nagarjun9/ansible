@@ -1,0 +1,13 @@
+- name: condition
+  hosts: remote 
+  become: yes
+  tasks:
+  - name: user verification
+    ansible.builtin.command: id Naga
+    registory: USER
+    ignore_error: true
+
+
+  - name: print user infomation
+    ansible.builtin.debug:
+      msg: "user info {{USER}}"
