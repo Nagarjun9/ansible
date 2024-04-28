@@ -5,7 +5,7 @@
     prompt: please enter username
     private: false
   - name: PASSWORD
-    password: Please enter the password
+    prompt: Please enter the password
     private: true
   tasks:
   - name: prompt variables decleration 
