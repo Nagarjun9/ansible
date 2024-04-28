@@ -1,13 +1,13 @@
-- name: var from prompt
+- name: vars form prompt 
   hosts: localhost
   vars_prompt:
   - name: USERNAME
-    prompt: please enter your username
-    private: false 
+    prompt: please enter the username
+    private: false
   - name: PASSWORD
-    prompt: please enter your password
-    private: true 
+    prompt: please enter password
+    private: true
   tasks:
-  - name: print the information 
+  - name: prompt for inpits
     ansible.builtin.debug:
-      msg: HI i am enter username {{USERNAME}}, Password {{PASSWORD}}
+      msg: HI i am using {{USERNAME}} and {{PASSWORD}}
