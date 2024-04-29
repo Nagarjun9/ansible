@@ -1,7 +1,7 @@
 - name: data types
   hosts: remote
   vars:
-    COURSE: "I am learning Devops"
+    COURSE: "Devops with aws "
     Tools:
     - Linux
     - ANSIBLE

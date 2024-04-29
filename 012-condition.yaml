@@ -1,17 +1,16 @@
-- name: condition
-  hosts: remote 
+- name: Conditions
+  hosts: remote
   become: yes
   tasks:
-  - name: user verification
+  - name: user info
     ansible.builtin.command: id Naga
-    register: USER
-    ignore_errors: true
+    registry: USER
+    ignore_error: yes
 
-
-  - name: print user infomation
+  - name: pring user info
     ansible.builtin.debug:
-      msg: "user info {{USER}}"
-
-  - name: create user
+      msg: "pring user info {{USER}}"
+      
+  - name: user create
     ansible.builtin.command: useradd Naga
-    when: USER.rc != 0
+    when: USER.tc != 0
