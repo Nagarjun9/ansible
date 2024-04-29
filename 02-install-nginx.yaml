@@ -11,7 +11,17 @@
     ansible.builtin.service:
       name: nginx
       state: started
-      enabled: yes  
+      enabled: yes 
+
+  - name: stop the nginx
+    ansible.builtin.service:
+       name: nginx
+       enabled: no 
+       state: stop
+  - name: remove the nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: remove 
 
 
 
