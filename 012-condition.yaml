@@ -5,7 +5,7 @@
   - name: user info
     ansible.builtin.command: id Naga
     registry: USER
-    ignore_errors: yes
+    ignore_errors: true
 
   - name: pring user info
     ansible.builtin.debug:
