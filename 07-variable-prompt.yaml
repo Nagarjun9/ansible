@@ -1,14 +1,14 @@
-- name: prompt lever variable
+- name: prompt 
   hosts: remote
   vars_prompt:
   - name: USERNAME
-    prompt: please enter the username
+    prompt: Please enter the username
     private: false
   - name: PASSWORD
-    prompt: please enter the password 
+    prompt: Please enter the password
     private: true
-  
+
   tasks:
-  - name: prompt the values in task lever 
+  - name: prompt variable
     ansible.builtin.debug:
-      msg: "USERNAME is: {{USERNAME}} PASSWORD is: {{PASSWORD}}"
+      msg: "USERNAME is : {{USERNAME}}, PASSWORD is: {{PASSWORD}}"
