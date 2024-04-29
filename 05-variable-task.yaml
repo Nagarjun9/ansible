@@ -11,6 +11,6 @@
     ansible.builtin.debug:
       msg: "I am learning {{COURSE}}, Triner is : {{TRINER}}, Duration takes {{DURATION}}"
 
-   - name: varisble from task 1
+   - name: varisble from task 2
      ansible.builtin.debug:
         msg: "I am learning {{COURSE}}, Triner is : {{TRINER}}, Duration takes {{DURATION}}"
