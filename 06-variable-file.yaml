@@ -1,7 +1,7 @@
 - name: varible from file
   hosts: remote
   vars_files:
-    vars.yaml
+  - vars.yaml
   tasks:
   - name: varible take from file
     ansible.builtin.debug:
