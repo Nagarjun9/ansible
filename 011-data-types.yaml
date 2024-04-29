@@ -1,17 +1,18 @@
 - name: data types
   hosts: remote
-  vars: 
-    Course: "Devops with AWS"
+  vars:
+    COURSE: "I am learning Devops"
     Tools:
-    - linux 
-    - shell
-    - ansible
-    Experiance:
+    - Linux
+    - ANSIBLE
+    - SHELL
+    EXPERIANCE:
       Devops: 3
-      AWS: 3
-      Cloud: e
+      AAWS: 2
+      CICD: 2
     Realtime: yes 
   tasks:
-  - name: task level data types
+  - name: data types call
     ansible.builtin.debug:
-      msg: "Hi i am learning {{Course}}, Tools i required: {{Tools}}, Experiance in {{Experiance}}, its a realtime {{Realtime}}"
+    Tools:
+      msg: "Hi am learning {{COURSE}}, require tools: {{Tools}}, total years experiance in {{EXPERIANCE}}, its a realtime {{Realtime}}"
