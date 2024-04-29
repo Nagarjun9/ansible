@@ -5,4 +5,4 @@
   tasks:
   - name: varible take from file
     ansible.builtin.debug:
-      msg: "HI i am learing {{Course}}, Trainer is: {{Triner}}, Duration its take: {{Duration}}"
+      mag: "i am learing {{Course}}, Triner is: {{Triner}}, Duration its take {{Duration}}"
