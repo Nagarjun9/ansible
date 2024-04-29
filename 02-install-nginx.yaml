@@ -16,7 +16,6 @@
   - name: stop the nginx
     ansible.builtin.service:
        name: nginx
-       enabled: no 
        state: stop
   - name: remove the nginx
     ansible.builtin.dnf:
