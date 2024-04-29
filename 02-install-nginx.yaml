@@ -20,7 +20,7 @@
   - name: remove the nginx
     ansible.builtin.dnf:
       name: nginx
-      state: remove 
+      state: removed 
 
 
 
