@@ -1,16 +1,16 @@
-- name: variable task
+- name: Variable for task 
   hosts: remote 
   vars:
-    COURSE: "DEVOPS"
-    TRINER: "SIVA"
-    DURATION: "3 Months"
+    COURSE: "Devops with asw"
+    TRINER: " SIVE "
+    DURATION: " 4 months"
   tasks:
-  - name: Varible in task level
+  - name: varisble from task 1
     vars:
-      COURSE: "AWS"
+      COURSE: "DEVOPS"
     ansible.builtin.debug:
-      msg: "i am learing {{COURSE}}, Triner is: {{TRINER}}, Course Duration is {{DURATION}}"
+      msg: "I am learning {{COURSE}}, Triner is : {{TRINER}}, Duration takes {{DURATION}}"
 
-  - name: variable
-    ansible.builtin.debug:
-      msg: "i am learing {{COURSE}}, Triner is: {{TRINER}}, Course Duration is {{DURATION}}"
+   - name: varisble from task 1
+     ansible.builtin.debug:
+        msg: "I am learning {{COURSE}}, Triner is : {{TRINER}}, Duration takes {{DURATION}}"
