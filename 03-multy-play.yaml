@@ -1,11 +1,13 @@
 - name: PLAY 1
-  hosts: remote 
+  hosts: remote
+  tasks: 
   - name: PLAY1 and TASK 1
     ansible.builtin.debug:
       msg: " I am PLAY 1 and TASK 1"
 
 - name: PLAY 2
   hosts: web
+  tasks: 
   - name: PLAY 2 and Task 2
     ansible.builtin.debug:
       msg: "Hi iam PLAY 2 and TASK 2"
