@@ -1,6 +1,6 @@
-- name: argument for cmd
+- name: Arguments
   hosts: remote
-  tasks: 
-  - name: task level argument
+  tasks:
+  - name: arguments from outside
     ansible.builtin.debug:
-      msg: "hi {{PERSON}}, how is your {{WORK}}"
+      msg: "HI {{MORNING}} {{WISH}}"
