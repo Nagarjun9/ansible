@@ -1,13 +1,10 @@
-- name: aurgemts
-  hosts: localhost
+- name: argument
+  hosts: remote
   tasks:
-  - name: passed argument outside 
+  - name: argument outside
     ansible.builtin.debug:
-      msg: "Hellow {{PERSON}}, GOOD {{WISH}}"
-
-- name: pass the argu
-  hosts: localhost
-  tasks:
-  - name: passing the argu outside
+      msg: "Hi {{PERSON}} how is your {{JOB}}"
+  
+  - name: argument outside 1
     ansible.builtin.debug:
-      msg: "I am doing {{WORK}}, after that {{FRESH}}"
+      msg: "Fine {{NAME}} what about {{PERSON}}"
