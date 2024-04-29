@@ -1,8 +1,8 @@
-- name: varible from file 
-  hosts: localhost
+- name: variable form file
+  hosts: remote
   vars_files:
   - vars.yaml
   tasks:
-  - name: varible from files 
+  - name: variable take from file
     ansible.builtin.debug:
-      msg: "Hi i am learing {{Course}}, Triner {{Triner}}, Duration {{Duration}} "
+      msg: "I am learing {Course}}, Trainer is {{Triner}}, Duration take{{Duration}}"
