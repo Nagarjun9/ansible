@@ -14,5 +14,4 @@
   tasks:
   - name: data types call
     ansible.builtin.debug:
-    Tools:
-      msg: "Hi am learning {{COURSE}}, require tools: {{Tools}}, total years experiance in {{EXPERIANCE}}, its a realtime {{Realtime}}"
+       msg: "Hi am learning {{COURSE}}, require tools: {{Tools}}, total years experiance in {{EXPERIANCE}}, its a realtime {{Realtime}}"
