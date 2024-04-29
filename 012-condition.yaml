@@ -3,14 +3,18 @@
   become: yes
   tasks:
   - name: user info
-    ansible.builtin.command: id Naga
+    ansible.builtin.command: id naga
     registry: USER
     ignore_errors: true
 
-  - name: pring user info
+  - name: print user info
     ansible.builtin.debug:
       msg: "pring user info {{USER}}"
       
   - name: user create
-    ansible.builtin.command: useradd Naga
+    ansible.builtin.command: useradd naga
     when: USER.rc != 0
+
+  - name: massage
+    ansible.builtin.debug:
+      msg: "Hello"
