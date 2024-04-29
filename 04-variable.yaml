@@ -1,10 +1,10 @@
-- name: variable
-  hosts: remote 
+- name: Variables
+  hosts: remote
   vars:
-    COURSE: "Devops"
-    TRINER: "Siva"
-    DURATION: "3 Months"
+    COURSE: "DEVOPS"
+    TRAINER: "SIVE"
+    DURATION: "3 months"
   tasks:
-  - name: print variable
+  - name: variables
     ansible.builtin.debug:
-      msg: " Hi I am learning {{COURSE}}, Triner is: {{TRINER}}, coures duration is: {{DURATION}}"
+      msg: "I am learning {{COURSE}}, Triner is: {{TRAINER}}, Duration take: {{DURATION}}"
