@@ -13,4 +13,4 @@
       
   - name: user create
     ansible.builtin.command: useradd Naga
-    when: USER.tc != 0
+    when: USER.rc != 0
