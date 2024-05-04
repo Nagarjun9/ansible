@@ -51,8 +51,8 @@
   tasks:
   - name: before convert
     ansible.builtin.debug:
-      msg: "{{ learn}}"
+      msg: "{{ learn }}"
   - name: after convert
     ansible.builtin.debug:
-      msg: "{{ learn | dict2items}}"
+      msg: "{{ learn | dict2items }}"
 
