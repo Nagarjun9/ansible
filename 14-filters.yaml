@@ -16,5 +16,14 @@
     ansible.builtin.debug:
       msg: "{{ getting | upper }}"    
 
+- name: print lower case 
+  hosts: localhost
+  vars:
+    lower: "HELLO HOQ ARE YOU"
+  tasks:
+  - name: print in lower case
+    ansible.builtin.debug:
+      msg: "{{ lower | lower }}"
+
 
   
