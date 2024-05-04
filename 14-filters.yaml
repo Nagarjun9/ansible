@@ -3,6 +3,24 @@
   tasks:
   - name: default value
     ansible.builtin.debug:
-      msg: "default value is: {{ Course | default('Ansible')}}"
+      msg: "Hi : {{ Course | default('Ansible')}}"
+  
+- name: print in upper case
+  hosts: localhost
+  vars:
+    my_list: hellow how are you
+  tasks:
+  - name4: uppercase 
+    ansible.builtin.debug:
+      msg: "Hi {{ mu_list | upper }}"
+  
+- name: print in lower case 
+  hosts: localhost
+  vars: 
+    my_list1: HOW ARE YOU 
+  tasks:
+  - name: lowercase 
+    ansible.builtin.debug:
+      msg: "Hi {{ my_list1 | lower }}"
 
 
