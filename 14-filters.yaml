@@ -34,5 +34,15 @@
     ansible.builtin.debug:
       msg: "{{ values | unique }}"
 
+- name: min and max print 
+  hosts: localhost
+  vars: 
+    age: [ 22, 33, 44, 99 ]
+  tasks:
+  - name: print minimum age amd maximum age 
+    ansible.builtin.debug:
+      msg: "minimum age is: {{age | min}}, Maximum age is: {{ age | max}}"
+
+
 
   
