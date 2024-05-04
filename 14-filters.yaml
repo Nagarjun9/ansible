@@ -12,7 +12,7 @@
   tasks:
   - name4: uppercase 
     ansible.builtin.debug:
-      msg: "Hi {{ mu_list | upper }}"
+      msg: "Hi {{ my_list | upper }}"
   
 - name: print in lower case 
   hosts: localhost
