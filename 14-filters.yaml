@@ -28,7 +28,7 @@
 - name: delete duplicates
   hosts: localhost
   vars:
-    values: [3, 4, 5, 7, 9, 1, 4, 5, 0, 6]
+    values: 3, 4, 5, 7, 9, 1, 4, 5, 0, 6
   tasks: 
   - name: delete duplicate form list 
     ansible.builtin.debug:
