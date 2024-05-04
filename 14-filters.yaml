@@ -51,12 +51,12 @@
       trinter: Siva
       duration: 3 months
   tasks:
-  - name: convert the dictonary to item 
+  - name: before convert
     ansible.builtin.debug:
       msg: "Before convert: {{ my_dict }}"
   - name: after convert
     ansible.builtin.debug:
-      msg: " after convert: {{ my_dict | dist2items }}"
+      msg: " after convert: {{ my_dict | dict2items }}"
 
 
   
