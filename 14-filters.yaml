@@ -44,15 +44,15 @@
 - name: convert dictonary to items/list
   hosts: localhost
   vars:
-    learn:
+    my_dict:
       course: Ansible 
       Triner: Sive
       Duration: 120hrs
   tasks:
   - name: before convert
     ansible.builtin.debug:
-      msg: "{{ learn }}"
+      msg: "Before convert {{ my_dict }}"
   - name: after convert
     ansible.builtin.debug:
-      msg: "{{ learn | dict2items }}"
+      msg: "after convert {{ my_dict | dict2items }}"
 
