@@ -3,6 +3,6 @@
   tasks:
   - name: default value
     ansible.builtin.debug:
-      msg: "default value is: { Course | default('Ansible')}"
+      msg: "default value is: {{ Course | default('Ansible')}"
 
-      
+
