@@ -19,11 +19,20 @@
 - name: print lower case 
   hosts: localhost
   vars:
-    lower: "HELLO HOQ ARE YOU"
+    lower: "HELLO HOW ARE YOU"
   tasks:
   - name: print in lower case
     ansible.builtin.debug:
       msg: "{{ lower | lower }}"
+
+- name: delete duplicates
+  hosts: localhost
+  vars:
+    values: [3, 4, 5, 7, 9, 1, 4, 5, 0, 6]
+  tasks: 
+  - name: delete duplicate form list 
+    ansible.builtin.debug:
+      msg: "{{ values | unique }}"
 
 
   
