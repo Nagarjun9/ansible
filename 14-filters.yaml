@@ -24,7 +24,7 @@
       msg: "Hi {{ my_list1 | lower }}"
 
 - name: remove duplicates
-  hosts: localhosts
+  hosts: localhost
   vars:
     numbers: [1, 2, 3, 5, 6, 8, 9, 9, 9, 0, 9]
   tasks:
