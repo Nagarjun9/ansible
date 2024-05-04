@@ -46,17 +46,17 @@
 - name: convert dictonary to item/list 
   hosts: localhost
   vars: 
-    my_list:
-    course: Ansible
-    trinter: Siva
-    duration: 3 months
+    my_dict:
+      course: Ansible
+      trinter: Siva
+      duration: 3 months
   tasks:
   - name: convert the dictonary to item 
     ansible.builtin.debug:
-      msg: "Before convert: {{ my_list }}"
+      msg: "Before convert: {{ my_dict }}"
   - name: after convert
     ansible.builtin.debug:
-      msg: " after convert: {{ my_list | dist2items }}"
+      msg: " after convert: {{ my_dict | dist2items }}"
 
 
   
