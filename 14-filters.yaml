@@ -6,4 +6,15 @@
     ansible.builtin.debug:
       msg: "Hello {{ course | default('ansible') }}"
 
+    
+- name: Upper case
+  hosts: localhost
+  vars:
+    getting: "Hellow, Good morning"
+  tasks:
+  - name: print in uppercase 
+    ansible.builtin.debug:
+      msg: "{{ getting | upper }}"    
+
+
   
