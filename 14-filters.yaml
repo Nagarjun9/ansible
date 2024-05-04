@@ -10,7 +10,7 @@
   vars:
     my_list: hellow how are you
   tasks:
-  - name4: uppercase 
+  - name: uppercase 
     ansible.builtin.debug:
       msg: "Hi {{ my_list | upper }}"
   
